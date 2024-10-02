@@ -1,11 +1,18 @@
 import { Product } from "../../utils/type";
-import { useAppSelector } from "../../redux/store.ts";
+import { useAppDispatch, useAppSelector } from "../../redux/store.ts";
+import { useCallback } from "react";
+import { addCart } from "../../redux/slices/userSlice.ts";
 interface CardProps {
   sampleProducts: Product[];
 }
 export function Card({ sampleProducts }: CardProps) {
   const loginData = useAppSelector((state) => state.user.loginUser);
-  console.log(loginData?.carts)
+  const dispatch = useAppDispatch();
+  console.log(loginData?.carts);
+
+  const handleAddCart = useCallback((product: Product) => {
+    dispatch(addCart(product.name));
+  }, []);
 
   return (
     <>
@@ -17,7 +24,7 @@ export function Card({ sampleProducts }: CardProps) {
             <p className="product-card__price">
               {product.price.toLocaleString()}원
             </p>
-            <button className="button">
+            <button className="button" onClick={() => handleAddCart(product)}>
               add to cart
             </button>
           </div>
