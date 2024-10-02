@@ -9,6 +9,7 @@ import ProductsForMan from "./components/ManProducts";
 import ProductsForWoman from "./components/WomanProducts";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import ShoppingCart from "./components/ShoppingCart";
 // 기타 필요한 컴포넌트 임포트
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         {/* 다른 페이지 라우트 설정 */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/carts" element={<ShoppingCart />} />
       </Routes>
       <Footer />
     </Router>

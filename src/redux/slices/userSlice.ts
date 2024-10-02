@@ -4,6 +4,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 type userType = {
   id: string;
   password: string;
+  carts: string[];
 };
 
 interface initialStateType {
@@ -28,7 +29,7 @@ export const userSlice = createSlice({
       if (filteredUserIdx < 0) {
         return;
       }
-      state.loginUser = { id: id, password: password };
+      state.loginUser = { id: id, password: password, carts: [] };
     },
     signup: (state, action: PayloadAction<userType>) => {
       const { id, password } = action.payload;
@@ -38,12 +39,16 @@ export const userSlice = createSlice({
       if (filteredUserIdx > 0) {
         return;
       }
-      state.signedUsers = [...state.signedUsers, { id, password }];
+      state.signedUsers = [...state.signedUsers, { id, password, carts: [] }];
+    },
+    addCart: (state, action: PayloadAction<string>) => {
+      if (!state.loginUser) return;
+      state.loginUser.carts = [...state.loginUser.carts, action.payload];
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { login, signup } = userSlice.actions;
+export const { login, signup, addCart } = userSlice.actions;
 
 export default userSlice.reducer;
