@@ -13,14 +13,23 @@ const Footer: React.FC = () => {
           <li>
             <h5>Products</h5>
             <ul>신상품</ul>
-            <ul>공식아울렛</ul>
+            <ul>공식 아울렛</ul>
           </li>
         </ul>
         <ul>
           <li>
             <h5>Sports</h5>
             <ul>러닝</ul>
+            <ul>트레이닝</ul>
+            <ul>아웃도어</ul>
             <ul>축구</ul>
+            <ul>골프</ul>
+            <ul>요가</ul>
+            <ul>테니스</ul>
+            <ul>농구</ul>
+            <ul>스케이트보딩</ul>
+            <ul>수영</ul>
+            <ul>사이클링</ul>
           </li>
         </ul>
         <ul>
@@ -28,6 +37,9 @@ const Footer: React.FC = () => {
             <h5>Company Info</h5>
             <ul>회사소개</ul>
             <ul>채용정보</ul>
+            <ul>아디다스 앱</ul>
+            <ul>컨펌드 앱</ul>
+            <ul>아디다스 블로그</ul>
           </li>
         </ul>
         <ul>
@@ -40,8 +52,10 @@ const Footer: React.FC = () => {
         <ul>
           <li>
             <h5>Support</h5>
-            <ul>고객센터</ul>
+            <ul>고객센터, 심의수선</ul>
+            <ul>주문 / 배송조회</ul>
             <ul>FAQ</ul>
+            <ul>구매 이용약관</ul>
           </li>
         </ul>
         <ul>
@@ -84,6 +98,30 @@ const Footer: React.FC = () => {
                   alt="Twitter"
                 />
               </a>
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://img.icons8.com/?size=100&id=123922&format=png&color=000000"
+                  width="20"
+                  height="20"
+                  alt="tiktok"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://img.icons8.com/?size=100&id=6Cou2lzW51Bn&format=png&color=000000"
+                  width="20"
+                  height="20"
+                  alt="youtube"
+                />
+              </a>
             </div>
           </li>
         </ul>
@@ -92,7 +130,7 @@ const Footer: React.FC = () => {
       {/* 회사 정보 */}
       <div className="footer__info">
         <p>
-          패션쇼핑몰 | 서울특별시 강남구 패션로 123 | 대표: 홍길동 | 사업자
+          패션쇼핑몰 | 서울특별시 강남구 패션로 123 | 대표자: 홍길동 | 사업자
           등록번호: 123-45-67890 | 통신판매업신고: 제2021-서울강남-00000호
         </p>
         {/* 고객 센터 */}
