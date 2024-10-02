@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Search, User, Heart, ShoppingBag } from "lucide-react";
 import "../App.css";
-import logo from "./logo.jpg";
+
 
 const Header: React.FC = () => {
 	return (
@@ -11,11 +11,11 @@ const Header: React.FC = () => {
 				{/* Logo */}
 				<div className="flex-shrink-0">
 					<Link to="/">
-						<img
+						{/* <img
 							src={logo}
 							alt="Adidas logo"
 							className="h-20 w-auto object-contain"
-						/>
+						/> */}
 					</Link>
 				</div>
 

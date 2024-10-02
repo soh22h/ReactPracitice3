@@ -3,6 +3,7 @@ interface CardProps{
   sampleProducts: Product[]
 }
 export function Card({sampleProducts}:CardProps){
+  
   return (
   <>
   <div className="product-grid">
@@ -13,6 +14,7 @@ export function Card({sampleProducts}:CardProps){
             <p className="product-card__price">
               {product.price.toLocaleString()}원
             </p>
+            <button>add to cart</button>
           </div>
         ))}
     </div>

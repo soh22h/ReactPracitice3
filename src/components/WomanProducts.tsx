@@ -1,4 +1,3 @@
-// src/components/MainContent.tsx
 import React from "react";
 import "../styles/MainContent.css";
 import { Card } from "./main-components/card";
@@ -7,13 +6,18 @@ import { Product } from "../utils/type";
 
 const products:Product[] = sampleProducts;
 
-const MainContent: React.FC = () => {
+const ProductsForWoman: React.FC = () => {
+  const gender = false;
+  const productsForMan = products.filter((obj)=>{
+    return obj.gender === gender
+  })
+
   return (
     <main className="main-content">
-      <h2>This is product page ...</h2>
-      <Card sampleProducts={products} />
+      <h2>This is product for Woman page ...</h2>
+      <Card sampleProducts={productsForMan} />
     </main>
   );
 };
 
-export default MainContent;
+export default ProductsForWoman;

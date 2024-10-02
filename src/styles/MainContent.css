@@ -35,4 +35,5 @@
 .product-card__price {
   color: #031337;
   font-weight: bold;
+  margin: 10px 0;
 }
