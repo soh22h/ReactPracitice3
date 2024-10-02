@@ -6,7 +6,7 @@ export interface Product {
   gender: boolean;
 }
 
-export interface UserCart {
-  userId: string;
+export interface SessionUser{
+  id?: string;
   productId: string[];
 }
