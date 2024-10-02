@@ -1,20 +1,11 @@
 import { Product } from "../../utils/type";
 import { useAppSelector } from "../../redux/store.ts";
-import useLocalStorage from "../../hooks/useLocationStorage.ts";
-import { useCallback } from "react";
 interface CardProps {
   sampleProducts: Product[];
 }
 export function Card({ sampleProducts }: CardProps) {
   const loginData = useAppSelector((state) => state.user.loginUser);
-  const [_, setCart] = useLocalStorage<Product[]>(
-    loginData ? loginData.id : "",
-    [],
-  );
-
-  const onAddCart = useCallback((product: Product) => {
-    setCart((prev) => [...prev, product]);
-  }, []);
+  console.log(loginData?.carts)
 
   return (
     <>
@@ -26,7 +17,7 @@ export function Card({ sampleProducts }: CardProps) {
             <p className="product-card__price">
               {product.price.toLocaleString()}원
             </p>
-            <button className="button" onClick={() => onAddCart(product)}>
+            <button className="button">
               add to cart
             </button>
           </div>

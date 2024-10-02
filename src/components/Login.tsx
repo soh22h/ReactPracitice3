@@ -12,7 +12,10 @@ export default function Login() {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    dispatch(login({ id, password }));
+    dispatch(login({
+      id, password,
+      carts: []
+    }));
   };
 
   return (
