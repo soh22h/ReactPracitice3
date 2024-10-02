@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Search, User, Heart, ShoppingBag } from "lucide-react";
 import "../App.css";
 
-
 const Header: React.FC = () => {
 	return (
 		<header className="relative w-full bg-white text-black border-b border-gray-200 h-24">
@@ -11,11 +10,11 @@ const Header: React.FC = () => {
 				{/* Logo */}
 				<div className="flex-shrink-0">
 					<Link to="/">
-						{/* <img
-							src={logo}
+						<img
+							src={"public/img/logo.jpg"}
 							alt="Adidas logo"
 							className="h-20 w-auto object-contain"
-						/> */}
+						/>
 					</Link>
 				</div>
 
@@ -54,8 +53,8 @@ const Header: React.FC = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/kids" className="font-bold text-lg">
-							KIDS
+						<Link to="/carts" className="font-bold text-lg">
+							CARTS
 						</Link>
 					</li>
 					<li>
