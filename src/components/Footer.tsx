@@ -8,6 +8,18 @@ const Footer: React.FC = () => {
       className="footer"
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <span style={{ fontSize: "40px" }}>
+          지금 멤버십 가입하고 10% 할인 혜택 받으세요.
+        </span>
+        <p>* 이메일 수신동의자에 한해 10% 할인쿠폰 발급</p>
+      </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <ul>
           <li>
@@ -24,12 +36,6 @@ const Footer: React.FC = () => {
             <ul>아웃도어</ul>
             <ul>축구</ul>
             <ul>골프</ul>
-            <ul>요가</ul>
-            <ul>테니스</ul>
-            <ul>농구</ul>
-            <ul>스케이트보딩</ul>
-            <ul>수영</ul>
-            <ul>사이클링</ul>
           </li>
         </ul>
         <ul>
@@ -69,8 +75,8 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000"
-                  width="20"
-                  height="20"
+                  width="25"
+                  height="25"
                   alt="Facebook"
                 />
               </a>
@@ -81,8 +87,8 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://img.icons8.com/?size=100&id=dz63urxyxSdO&format=png&color=000000"
-                  width="20"
-                  height="20"
+                  width="25"
+                  height="25"
                   alt="Instagram"
                 />
               </a>
@@ -93,8 +99,8 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
-                  width="20"
-                  height="20"
+                  width="25"
+                  height="25"
                   alt="Twitter"
                 />
               </a>
@@ -105,8 +111,8 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://img.icons8.com/?size=100&id=123922&format=png&color=000000"
-                  width="20"
-                  height="20"
+                  width="25"
+                  height="25"
                   alt="tiktok"
                 />
               </a>
@@ -117,8 +123,8 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://img.icons8.com/?size=100&id=6Cou2lzW51Bn&format=png&color=000000"
-                  width="20"
-                  height="20"
+                  width="25"
+                  height="25"
                   alt="youtube"
                 />
               </a>

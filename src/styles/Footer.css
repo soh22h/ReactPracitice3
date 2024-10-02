@@ -15,21 +15,16 @@
   color: #666;
 }
 
-.footer__social-media {
-  /* display: flex; */
-  gap: 10px;
-}
-
-.footer__social-media img {
-  width: 20px;
-  height: 20px;
-}
-
 .footer__info p {
   margin: 5px 0;
 }
+
 .footer ul{
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
+}
+
+.footer p{
+  margin-top: 20px;
 }
