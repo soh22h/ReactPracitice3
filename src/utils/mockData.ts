@@ -1,5 +1,6 @@
-import { Product } from "./src/utils/type";
+import { Product } from "./type";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const sampleProducts: Product[] = [
   {
     id: 1,

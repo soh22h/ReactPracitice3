@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import "./App.css";
+import Footer from "./components/Footer";
 // 기타 필요한 컴포넌트 임포트
 
 const App: React.FC = () => {
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Route path="/" element={<MainContent />} />
         {/* 다른 페이지 라우트 설정 */}
       </Routes>
+      <Footer />
     </Router>
   );
 };
