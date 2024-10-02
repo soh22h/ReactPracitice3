@@ -1,4 +1,5 @@
 // src/components/Footer.tsx
+// yh
 import React from "react";
 import "../styles/Footer.css";
 
