@@ -7,6 +7,8 @@ import "./App.css";
 import Footer from "./components/Footer";
 import ProductsForMan from "./components/ManProducts";
 import ProductsForWoman from "./components/WomanProducts";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 // 기타 필요한 컴포넌트 임포트
 
 const App: React.FC = () => {
@@ -19,6 +21,8 @@ const App: React.FC = () => {
         <Route path="/men" element={<ProductsForMan />} />
         <Route path="/women" element={<ProductsForWoman />} />
         {/* 다른 페이지 라우트 설정 */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer />
     </Router>
