@@ -4,17 +4,17 @@ import "../styles/MainContent.css";
 import { Card } from "./main-components/card";
 import { sampleProducts } from "../utils/mockData";
 import { Product } from "../utils/type";
+import FilterSortMenu from "./FilterSortMenu";
 
 const products: Product[] = sampleProducts;
 
 const MainContent: React.FC = () => {
-  
-  return (
-    <main className="main-content">
-      <h2>This is product page ...</h2>
-      <Card sampleProducts={products} />
-    </main>
-  );
+	return (
+		<main className="main-content">
+			<FilterSortMenu />
+			<Card sampleProducts={products} />
+		</main>
+	);
 };
 
 export default MainContent;
